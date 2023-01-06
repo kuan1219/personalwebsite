@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Projects    
+        </title>
+        <meta name="keywords" content="html, css, javascript">
+        <meta name="description" content="Website for my project showcase" >
+        <meta name="author" content="Kuan Lei">
+        <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+    h3, h4, p{
+        margin:0;
+    }
+    h1{
+        text-align:center;
+    }
+
+    .main-grid-contrainer{
+        display:grid;
+        grid-template-columns:auto;
+        grid-template-rows:auto;
+        gap:50px;
+        padding:10px;
+        margin:10px 100px 10px 100px;
+    }
+    .self-introduction-grid-contrainer{
+        display:grid;
+        grid-template-columns:400px 400px;
+        grid-template-rows:auto;
+        justify-content:center;
+        gap:20px;
+    }
+    @media only screen and (max-width:900px){
+        .self-introduction-grid-contrainer{
+        display:grid;
+        grid-template-columns:auto;
+        grid-template-rows:auto auto;
+        gap:10px;
+        }
+    } 
+    
+    .self-image{
+        justify-self: end;
+    }
+
+    .page-descrition{
+        align-self:center;
+        max-width:300px;
+    }
+
+    .project-list{
+        display:grid;
+        grid-template-columns:20% 20% 20% 20%;
+        gap:3%;
+    }
+
+    </style>
+
+    <body class="main-grid-contrainer">
+        <header>
+            <h1>PROJECT PAGE</h1>
+        </header>
+        <div class="self-introduction-grid-contrainer" >
+            <div class="self-image">
+                <img src="https://elasticbeanstalk-us-west-2-793705399361.s3.us-west-2.amazonaws.com/image/istockphoto-1334070091-612x612.jpg" 
+                alt="picture of me wearing suit"
+                style="max-width:300px">
+            </div>
+            <div class="page-descrition">
+                <p>Hi this is Kuan Lei, I am currently a student as a computer science major.</p>
+                <p>This is my project showcase. I have finished project on Website, Java and C++.</p>
+            </div>
+        </div>
+
+        <div class="project-list">
+            <div class="web-application">
+                <div class="title-for-web-application">
+                    <h3>Website project</h3>
+                    <h4>Creating tree and searching algorithm</h4>
+                    <h4>Summer 2022</h4>
+                </div>
+                <div class="image-for-web-application">
+                    <a href= "http://127.0.0.1:5500/main.html">
+                        <img src="https://elasticbeanstalk-us-west-2-793705399361.s3.us-west-2.amazonaws.com/image/screenshort-of-tree-web-application.png"
+                            alt="image of my web application main page"
+                            title="Click me to the website"
+                            style="max-width:200px">
+                    </a>
+                </div>
+                <div class="web-application-description">
+                    <p>
+                        This web application demonstrate 
+                        BFS, DFS, and create a tree with random number.
+                    </p>
+                </div>
+                <div class="link-to-web-application">
+                    <p>
+                        Link to website:<a href="http://127.0.0.1:5500/main.html">
+                            http://127.0.0.1:5500/main.html
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
