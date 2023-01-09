@@ -12,13 +12,15 @@
     </head>
 
     <style>
-    h3, h4, p{
+    h2,h3,h4,h5,p{
         margin:0;
     }
-    h1{
+    h1,h2,h3{
         text-align:center;
     }
-
+    h5{
+        text-align:left;
+    }
     .main-grid-contrainer{
         display:grid;
         grid-template-columns:auto;
@@ -54,15 +56,43 @@
 
     .project-list{
         display:grid;
-        grid-template-columns:20% 20% 20% 20%;
-        gap:3%;
+        grid-template-columns:auto auto auto auto;
+        align-items:stretch;
+        gap:10px;
+    }
+    .project{
+        display:grid;
+        grid-template-rows:auto 160px auto auto;
+    }
+
+    @media only screen and (max-width:1200px)
+    {
+        .project-list{
+        display:grid;
+        grid-template-columns:auto auto;
+        grid-template-rows:auto auto;
+        gap:10px;
+        }
+        h3,h4,h5{
+            text-align:left;
+        }
+    }
+    @media only screen and (max-width:800px)
+    {
+        .project-list{
+        display:grid;
+        grid-template-columns:auto;
+        }
+        .project{
+            grid-template-rows:auto auto auto auto;
+        }
     }
 
     </style>
 
     <body class="main-grid-contrainer">
         <header>
-            <h1>KUAN LEI PROJECT PAGE</h1>
+            <h1>KUAN LEI's PROJECT PAGE</h1>
         </header>
         <div class="self-introduction-grid-contrainer" >
             <div class="self-image">
@@ -76,14 +106,43 @@
             </div>
         </div>
 
+        <h2>Projects</h2>
         <div class="project-list">
-            <div class="BFS-BFS">
-                <div class="title-for-web-application">
-                    <h4>BFS/BFS</h4>
-                    <h4>Html CSS Javascript</h4>
-                    <h4>August 2022</h4>
+            <div class="project">
+                <div class="title-for-project">
+                    <h3>MAZE</h3>
+                    <h5>REACT</h5>
+                    <h5>DECEMBER 2021</h5>
                 </div>
-                <div class="image-for-web-application">
+                <div class="image-for-project">
+                    <a href= "http://127.0.0.1:5500/main.html">
+                        <img src="https://elasticbeanstalk-us-west-2-793705399361.s3.us-west-2.amazonaws.com/image/React-maze.png"
+                            alt="image of Maze"
+                            title="Click me to the website"
+                            style="max-width:200px">
+                    </a>
+                </div>
+                <div class="description-for-project">
+                    <p>
+                        Used React models to create a maze.
+                        User can set the size and it can show
+                        the right path to the user.
+                    </p>
+                </div>
+                <div class="link-to-project-page"></div>
+                <p>
+                    Link to website:<a href="http://127.0.0.1:5500/main.html">
+                        http://127.0.0.1:5500/main.html
+                    </a>
+                </p>
+            </div>
+            <div class="project">
+                <div class="title-for-project">
+                    <h3>BFS/BFS</h3>
+                    <h5>Html CSS Javascript</h5>
+                    <h5>August 2022</h5>
+                </div>
+                <div class="image-for-project">
                     <a href= "http://127.0.0.1:5500/main.html">
                         <img src="https://elasticbeanstalk-us-west-2-793705399361.s3.us-west-2.amazonaws.com/image/screenshort-of-tree-web-application.png"
                             alt="image of my web application main page"
@@ -91,13 +150,73 @@
                             style="max-width:200px">
                     </a>
                 </div>
-                <div class="web-application-description">
+                <div class="description-for-project">
                     <p>
-                        This web application demonstrate 
-                        BFS, DFS, and create a tree with random number.
+                        This page demonstrate BFS, DFS, 
+                        and create a tree with random number.
                     </p>
                 </div>
-                <div class="link-to-web-application">
+                <div class="link-to-project-page">
+                    <p>
+                        Link to website:<a href="http://127.0.0.1:5500/main.html">
+                            http://127.0.0.1:5500/main.html
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="title-for-project">
+                    <h3>Course management</h3>
+                    <h5>C++</h5>
+                    <h5>DECEMBER 2022</h5>
+                </div>
+                <div class="image-for-project">
+                    <a href= "http://127.0.0.1:5500/main.html">
+                        <img src="https://elasticbeanstalk-us-west-2-793705399361.s3.us-west-2.amazonaws.com/image/course+schedule+menu+consule.png"
+                            alt="image of Course Mananement"
+                            title="Click me to the website"
+                            style="max-width:200px">
+                    </a>
+                </div>
+                <div class="description-for-project">
+                    <p>
+                        This console used set, pointer, list, and OOP.
+                        User can search, add and remove from the courses list.
+                        Some courses have prerequisties.
+                    </p>
+                </div>
+                <div class="link-to-project-page">
+                    <p>
+                        Link to website:<a href="http://127.0.0.1:5500/main.html">
+                            http://127.0.0.1:5500/main.html
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="title-for-project">
+                    <div class="title-for-project">
+                        <h3>Spelling bee</h3>
+                        <h5>JAVA(Group project)</h5>
+                        <h5>DECEMBER 2022</h5>
+                    </div>
+                </div>
+                <div class="image-for-project">
+                    <a href= "http://127.0.0.1:5500/main.html">
+                        <img src="https://elasticbeanstalk-us-west-2-793705399361.s3.us-west-2.amazonaws.com/image/spelling+bee.png"
+                            alt="image of Spelling Bee"
+                            title="Click me to the website"
+                            style="max-width:200px">
+                    </a> 
+                </div>
+                <div class="description-for-project">
+                    <p>
+                        User can play a spelling bee in JavaFx application.
+                        This was a group project that used Dynamic stack, singly 
+                        linked list and hashmap.
+                    </p>
+                </div>
+                <div class="link-to-project-page">
                     <p>
                         Link to website:<a href="http://127.0.0.1:5500/main.html">
                             http://127.0.0.1:5500/main.html
@@ -106,7 +225,7 @@
                 </div>
             </div>
         </div>
-
+        
     </body>
 </html>
 
